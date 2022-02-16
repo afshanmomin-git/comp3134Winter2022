@@ -1,0 +1,4 @@
+root@comp3134-intro:~# nano /etc/ssh/sshd_config
+root@comp3134-intro:~# ufw allow 2222/tcp
+ufw status
+service sshd restart
