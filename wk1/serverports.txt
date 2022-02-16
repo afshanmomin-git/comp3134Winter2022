@@ -24,5 +24,5 @@ Port 22: Secure Shell (SSH)
 Port 25: Simple Mail Transfer Protocol (SMTP)
 Port 80: Hypertext Transfer Protocol (HTTP)
 Port 123: Network Time Protocol (NTP)
-
-
+Port 443: Hypertext Transfer Protocol (HTTP)
+Port 110: Post Office Protocol (POP3)

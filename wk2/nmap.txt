@@ -1,0 +1,55 @@
+
+root@comp3134-intro:~# nmap georgebrown.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-02-16 00:12 UTC
+Nmap scan report for georgebrown.ca (99.79.139.11)
+Host is up (0.037s latency).
+rDNS record for 99.79.139.11: ec2-99-79-139-11.ca-central-1.compute.amazonaws.com
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 4.51 seconds
+
+--------------------------------------------------------------------------------
+root@comp3134-intro:~# nmap -p 80 georgebrown.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-02-16 00:13 UTC
+Nmap scan report for georgebrown.ca (99.79.139.11)
+Host is up (0.068s latency).
+rDNS record for 99.79.139.11: ec2-99-79-139-11.ca-central-1.compute.amazonaws.com
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.37 seconds
+
+--------------------------------------------------------------------------------
+
+root@comp3134-intro:~# nmap -p 10-50 georgebrown.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-02-16 00:15 UTC
+Nmap scan report for georgebrown.ca (99.79.139.11)
+Host is up (0.041s latency).
+rDNS record for 99.79.139.11: ec2-99-79-139-11.ca-central-1.compute.amazonaws.com
+Not shown: 40 filtered ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 1.75 seconds
+
+--------------------------------------------------------------------------------
+
+root@comp3134-intro:~# nmap -F google.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-02-16 00:16 UTC
+Nmap scan report for google.com (142.251.33.174)
+Host is up (0.0010s latency).
+Other addresses for google.com (not scanned): 2607:f8b0:400b:804::200e
+rDNS record for 142.251.33.174: yyz10s17-in-f14.1e100.net
+Not shown: 98 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 2.07 seconds
+
+--------------------------------------------------------------------------------
