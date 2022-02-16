@@ -1,0 +1,26 @@
+root@comp3134-intro:~# tcpdump -r 0001.pcap
+reading from file 0001.pcap, link-type EN10MB (Ethernet)
+01:42:19.458965 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 2403377083:2403377119, ack 1407544421, win 501, options [nop,nop,TS val 2498720284 ecr 1228040828], length 36
+01:42:19.461583 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 36:80, ack 1, win 501, options [nop,nop,TS val 2498720287 ecr 1228040828], length 44
+01:42:19.461675 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 80:188, ack 1, win 501, options [nop,nop,TS val 2498720287 ecr 1228040828], length 108
+01:42:19.461745 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 188:224, ack 1, win 501, options [nop,nop,TS val 2498720287 ecr 1228040828], length 36
+01:42:19.471313 IP cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292 > comp3134-intro.ssh: Flags [.], ack 36, win 32767, options [nop,nop,TS val 1228040847 ecr 2498720284], length 0
+01:42:19.478588 IP cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292 > comp3134-intro.ssh: Flags [.], ack 80, win 32767, options [nop,nop,TS val 1228040851 ecr 2498720287], length 0
+01:42:19.486129 IP cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292 > comp3134-intro.ssh: Flags [.], ack 188, win 32766, options [nop,nop,TS val 1228040854 ecr 2498720287], length 0
+01:42:19.627987 IP cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292 > comp3134-intro.ssh: Flags [.], ack 224, win 32767, options [nop,nop,TS val 1228040992 ecr 2498720287], length 0
+01:42:19.814445 IP 45-137-23-252.hosted-by-rootlayer.net.54014 > comp3134-intro.l2f:  l2tp:[TLS](0/0)Ns=0,Nr=0 Length 76 larger than packet
+01:42:22.865298 IP comp3134-intro.ssh > 49.88.112.72.18633: Flags [S.], seq 2995817720, ack 1168602178, win 65160, options [mss 1460,sackOK,TS val 958449927 ecr 2234031845,nop,wscale 7], length 0
+01:42:27.985274 IP comp3134-intro.ssh > 49.88.112.72.57989: Flags [S.], seq 1189981111, ack 2862931227, win 65160, options [mss 1460,sackOK,TS val 958455047 ecr 2234033096,nop,wscale 7], length 0
+01:42:32.849270 IP comp3134-intro.ssh > 49.88.112.72.42206: Flags [S.], seq 1493835872, ack 3742951349, win 65160, options [mss 1460,sackOK,TS val 958459911 ecr 2234034347,nop,wscale 7], length 0
+01:42:37.928546 IP 45.135.232.218.44403 > comp3134-intro.57159: Flags [S], seq 3425858311, win 1024, length 0
+01:42:38.575576 IP scanner-03.ch1.censys-scanner.com.22023 > comp3134-intro.20000: Flags [S], seq 2590645753, win 1024, options [mss 1460], length 0
+01:42:43.947423 IP cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292 > comp3134-intro.ssh: Flags [P.], seq 1:45, ack 224, win 32768, options [nop,nop,TS val 1228065110 ecr 2498720287], length 44
+01:42:43.947613 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 224:268, ack 45, win 501, options [nop,nop,TS val 2498744773 ecr 1228065110], length 44
+01:42:43.962700 IP cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292 > comp3134-intro.ssh: Flags [.], ack 268, win 32767, options [nop,nop,TS val 1228065132 ecr 2498744773], length 0
+01:42:44.163835 IP cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292 > comp3134-intro.ssh: Flags [P.], seq 45:89, ack 268, win 32768, options [nop,nop,TS val 1228065332 ecr 2498744773], length 44
+01:42:44.164073 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 268:312, ack 89, win 501, options [nop,nop,TS val 2498744989 ecr 1228065332], length 44
+01:42:44.180064 IP cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292 > comp3134-intro.ssh: Flags [.], ack 312, win 32767, options [nop,nop,TS val 1228065344 ecr 2498744989], length 0
+01:42:44.436660 IP cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292 > comp3134-intro.ssh: Flags [P.], seq 89:133, ack 312, win 32768, options [nop,nop,TS val 1228065598 ecr 2498744989], length 44
+01:42:44.436883 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 312:356, ack 133, win 501, options [nop,nop,TS val 2498745262 ecr 1228065598], length 44
+01:42:44.452210 IP cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292 > comp3134-intro.ssh: Flags [.], ack 356, win 32767, options [nop,nop,TS val 1228065613 ecr 2498745262], length 0
+root@comp3134-intro:~# 

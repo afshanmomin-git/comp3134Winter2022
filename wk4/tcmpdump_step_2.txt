@@ -1,0 +1,40 @@
+root@comp3134-intro:~# tcpdump -c 5 -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+01:39:27.521593 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 2380881575:2380881683, ack 1407525173, win 501, options [nop,nop,TS val 2498548347 ecr 1227870599], length 108
+01:39:27.521679 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 108:144, ack 1, win 501, options [nop,nop,TS val 2498548347 ecr 1227870599], length 36
+01:39:27.521695 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 144:252, ack 1, win 501, options [nop,nop,TS val 2498548347 ecr 1227870599], length 108
+01:39:27.521731 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 252:288, ack 1, win 501, options [nop,nop,TS val 2498548347 ecr 1227870599], length 36
+01:39:27.522345 IP comp3134-intro.53471 > 67.207.67.3.domain: 50869+ [1au] PTR? 185.88.141.72.in-addr.arpa. (55)
+5 packets captured
+40 packets received by filter
+3 packets dropped by kernel
+root@comp3134-intro:~# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

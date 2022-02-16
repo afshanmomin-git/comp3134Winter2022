@@ -1,0 +1,49 @@
+root@comp3134-intro:~# tcpdump -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+01:36:17.580077 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 2380871875:2380871983, ack 1407524825, win 501, options [nop,nop,TS val 2498358405 ecr 1227681943], length 108
+01:36:17.580168 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 108:144, ack 1, win 501, options [nop,nop,TS val 2498358406 ecr 1227681943], length 36
+01:36:17.580253 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 144:252, ack 1, win 501, options [nop,nop,TS val 2498358406 ecr 1227681943], length 108
+01:36:17.580321 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 252:288, ack 1, win 501, options [nop,nop,TS val 2498358406 ecr 1227681943], length 36
+01:36:17.581263 IP comp3134-intro.55294 > 67.207.67.3.domain: 13957+ [1au] PTR? 185.88.141.72.in-addr.arpa. (55)
+01:36:17.581360 IP comp3134-intro.34680 > 67.207.67.3.domain: 52313+ [1au] PTR? 185.88.141.72.in-addr.arpa. (55)
+01:36:17.581940 IP comp3134-intro.49273 > 67.207.67.3.domain: 21005+ [1au] PTR? 116.157.182.147.in-addr.arpa. (57)
+01:36:17.582044 IP comp3134-intro.43543 > 67.207.67.3.domain: 36670+ [1au] PTR? 116.157.182.147.in-addr.arpa. (57)
+01:36:17.582137 IP comp3134-intro.53801 > 67.207.67.3.domain: 32264+ [1au] PTR? 116.157.182.147.in-addr.arpa. (57)
+01:36:17.582288 IP 67.207.67.3.domain > comp3134-intro.34680: 52313 1/0/1 PTR cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca. (115)
+01:36:17.582319 IP comp3134-intro > 67.207.67.3: ICMP comp3134-intro udp port 34680 unreachable, length 151
+01:36:17.582564 IP 67.207.67.3.domain > comp3134-intro.55294: 13957 1/0/1 PTR cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca. (115)
+01:36:17.582564 IP 67.207.67.3.domain > comp3134-intro.43543: 36670 NXDomain 0/1/1 (124)
+01:36:17.582564 IP 67.207.67.3.domain > comp3134-intro.49273: 21005 NXDomain 0/1/1 (124)
+01:36:17.582564 IP 67.207.67.3.domain > comp3134-intro.53801: 32264 NXDomain 0/1/1 (124)
+01:36:17.582589 IP comp3134-intro > 67.207.67.3: ICMP comp3134-intro udp port 55294 unreachable, length 151
+01:36:17.582721 IP comp3134-intro.43543 > 67.207.67.3.domain: 36670+ PTR? 116.157.182.147.in-addr.arpa. (46)
+01:36:17.582807 IP comp3134-intro.53801 > 67.207.67.3.domain: 32264+ PTR? 116.157.182.147.in-addr.arpa. (46)
+01:36:17.582953 IP comp3134-intro.49273 > 67.207.67.3.domain: 21005+ PTR? 116.157.182.147.in-addr.arpa. (46)
+01:36:17.583032 IP 67.207.67.3.domain > comp3134-intro.43543: 36670 NXDomain 0/1/0 (113)
+01:36:17.583266 IP 67.207.67.3.domain > comp3134-intro.53801: 32264 NXDomain 0/1/0 (113)
+01:36:17.583415 IP 67.207.67.3.domain > comp3134-intro.49273: 21005 NXDomain 0/1/0 (113)
+01:36:17.584092 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 288:548, ack 1, win 501, options [nop,nop,TS val 2498358409 ecr 1227681943], length 260
+01:36:17.584185 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 548:584, ack 1, win 501, options [nop,nop,TS val 2498358410 ecr 1227681943], length 36
+01:36:17.584287 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 584:820, ack 1, win 501, options [nop,nop,TS val 2498358410 ecr 1227681943], length 236
+01:36:17.584357 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 820:856, ack 1, win 501, options [nop,nop,TS val 2498358410 ecr 1227681943], length 36
+01:36:17.584463 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 856:1092, ack 1, win 501, options [nop,nop,TS val 2498358410 ecr 1227681943], length 236
+01:36:17.584954 IP comp3134-intro.45793 > 67.207.67.3.domain: 45241+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+01:36:17.585047 IP comp3134-intro.42985 > 67.207.67.3.domain: 3562+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+01:36:17.585145 IP comp3134-intro.49737 > 67.207.67.3.domain: 12562+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+01:36:17.585487 IP 67.207.67.3.domain > comp3134-intro.45793: 45241 NXDomain 0/1/1 (120)
+01:36:17.585526 IP 67.207.67.3.domain > comp3134-intro.49737: 12562 NXDomain 0/1/1 (120)
+01:36:17.585605 IP 67.207.67.3.domain > comp3134-intro.42985: 3562 NXDomain 0/1/1 (120)
+01:36:17.585743 IP comp3134-intro.45793 > 67.207.67.3.domain: 45241+ PTR? 3.67.207.67.in-addr.arpa. (42)
+01:36:17.585835 IP comp3134-intro.49737 > 67.207.67.3.domain: 12562+ PTR? 3.67.207.67.in-addr.arpa. (42)
+01:36:17.585911 IP comp3134-intro.42985 > 67.207.67.3.domain: 3562+ PTR? 3.67.207.67.in-addr.arpa. (42)
+01:36:17.587666 IP cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292 > comp3134-intro.ssh: Flags [.], ack 0, win 32767, options [nop,nop,TS val 1227681965 ecr 2498358399], length 0
+01:36:17.587698 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 1092:3916, ack 1, win 501, options [nop,nop,TS val 2498358413 ecr 1227681965], length 2824
+01:36:17.594664 IP cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292 > comp3134-intro.ssh: Flags [.], ack 108, win 32766, options [nop,nop,TS val 1227681970 ecr 2498358405], length 0
+01:36:17.594704 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [P.], seq 3916:6812, ack 1, win 501, options [nop,nop,TS val 2498358420 ecr 1227681970], length 2896
+01:36:17.669254 IP comp3134-intro.ssh > cpe688f2e0f3fd3-cm688f2e0f3fd0.cpe.net.fido.ca.50292: Flags [.], seq 6812:8260, ack 1, win 501, options [nop,nop,TS val 2498358495 ecr 1227681970], length 1448
+^C
+41 packets captured
+45 packets received by filter
+3 packets dropped by kernel
+root@comp3134-intro:~# 
